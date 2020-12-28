@@ -482,6 +482,7 @@ $(document).ready(function () {
   $(document).on('click', '.toggle-dropdown .dropdown-menu', function (e) {
     e.stopPropagation()
   })
+  setTimeout(() => {  exportToHTML(ui.area.markdown) }, 2000);
 })
 // when page resize
 $(window).resize(function () {
